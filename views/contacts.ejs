@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Contacts</h2>
+            <a href="/contact/add" class="btn btn-primary">Add Contact</a>
+            
+            <table class="table " id="contactTable">
+  <thead>
+    <tr>
+      <th scope="col">Number</th>
+      <th scope="col">Name</th>
+      <th scope="col">Number</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <% contacts.forEach((row, i) => { %>
+      <td><%= i+1%></td>
+      <td><%= row.nama %></td>
+      <td><%= row.nohp  %></td>
+      <td><a href="/contact/<%=row.nama  %>" class="btn btn-primary badge rounded-pill"> Aksi</a></td>
+    </tr>
+            <% }) %>
+
+  </tbody>
+</table>
+        </div>
+    </div>
+</div>

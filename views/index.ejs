@@ -1,0 +1,9 @@
+<h1>Putra Wibawa</h1>
+<% if (mhs.length < 1) { %>
+<p>Data Mahasiswa kosong</p>
+<% } else { %> <% mhs.forEach(m => { %>
+<ul>
+  <li>Nama : <%= m.nama %></li>
+  <li>Email : <%= m.address %></li>
+</ul>
+<% }) %> <% } %>

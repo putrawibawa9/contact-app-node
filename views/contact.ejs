@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2><%= title  %></h2>
+            <table class="table" id="contactTable">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Number</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= contact.nama %></td>
+      <td><%= contact.nohp  %></td>
+      <td>
+        <a href="/contact/edit/<%= contact.nama %>" class="btn btn-primary">Edit</a>
+        <a href="/contact/delete/<%= contact.nama %>" class="btn btn-danger">Hapus</a>
+        </form>
+    </tr>
+
+  </tbody>
+</table>
+<!-- Kembali -->
+<a href="/contacts" class="btn btn-primary">Kembali</a>
+        </div>
+    </div>
+</div>
